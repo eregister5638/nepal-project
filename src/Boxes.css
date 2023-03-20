@@ -1,0 +1,64 @@
+/* Boxes.css */
+*{
+    margin: 0;
+  }
+  body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+.box {
+    height: 15%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);
+    position: absolute;
+    width: 100%;
+  }
+  .box1 {
+    top: 10%;
+    left: 10%;
+    background: #920e11;
+    height: 17%;
+  }
+  .box2 {
+    top: 32%;
+    left: -10%;
+    background: #cf6f00;
+    height: 17%;
+  }
+  .box3 {
+    top: 57%;
+    left: 10%;
+    background: #920e11;
+    height: 17%;
+  }
+  .box4 {
+    top: 79%;
+    left: -10%;
+    background: #cf6f00;
+    height: 17%;
+  }
+  .box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .button1{
+    background: transparent;
+    color: white;
+  }
+  .button2{
+    background: transparent;
+    color: white;
+  }
+  .button3{
+    background: transparent;
+    color: white;
+  }
+  .button4{
+    background: transparent;
+    color: white;
+  }
