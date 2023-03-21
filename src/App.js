@@ -3,19 +3,40 @@ import './App.css';
 import './Navbar.css';
 import './Boxes.css';
 import Navbar from './Navbar';
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Airway from './Airway';
 
 function App() {
   return (
     <div>
       <Navbar />
-
-
-      <div className="box box1"><a href="/Users/ethan/Desktop/nepal_project/immobilization.html"><button className="button1">Immobilizations</button></a></div>
-      <div className="box box2"><a href="/Users/ethan/Desktop/nepal_project/wound.html"><button className="button2">Wound Management</button></a></div>
-      <div className="box box3"><a href="/Users/ethan/Desktop/nepal_project/airway.html"><button className="button3">Airway Management</button></a></div>
-      <div className="box box4"><a href="/Users/ethan/Desktop/nepal_project/burn.html"><button className="button4">Burn Management</button></a></div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<div className="container">
+            <div className="box box1">
+              <a href="/Users/ethan/Desktop/nepal_project/immobilization.html">
+                <button className="button1">Immobilizations</button>
+              </a>
+            </div>
+            <div className="box box2">
+              <a href="/Users/ethan/Desktop/nepal_project/wound.html">
+                <button className="button2">Wound Management</button>
+              </a>
+            </div>
+            <div className="box box3">
+              <a href="/airway">
+                <button className="button3">Airway Management</button>
+              </a>
+            </div>
+            <div className="box box4">
+              <a href="/Users/ethan/Desktop/nepal_project/burn.html">
+                <button className="button4">Burn Management</button>
+              </a>
+            </div>
+          </div>} />
+          <Route path="/airway" element={<Airway />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
