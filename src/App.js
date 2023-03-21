@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Airway from './Airway';
 import Wound from './Wound';
+import Burn from './Burn';
 
 function App() {
   return (
@@ -30,13 +31,15 @@ function App() {
               </a>
             </div>
             <div className="box box4">
-              <a href="/Users/ethan/Desktop/nepal_project/burn.html">
+            <a href="/burn">
                 <button className="button4">Burn Management</button>
               </a>
             </div>
           </div>} />
           <Route path="/airway" element={<Airway />} />
           <Route path="/wound" element={<Wound />} />
+          <Route path="/burn" element={<Burn />} />
+
         </Routes>
       </Router>
     </div>
