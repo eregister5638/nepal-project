@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Airway from './Airway';
 import Wound from './Wound';
 import Burn from './Burn';
+import Immobilizations from './Immobilizations';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<div className="container">
             <div className="box box1">
-              <a href="/Users/ethan/Desktop/nepal_project/immobilization.html">
+            <a href="/immobilizations">
                 <button className="button1">Immobilizations</button>
               </a>
             </div>
@@ -36,6 +37,7 @@ function App() {
               </a>
             </div>
           </div>} />
+          <Route path="/immobilizations" element={<Immobilizations />} />
           <Route path="/airway" element={<Airway />} />
           <Route path="/wound" element={<Wound />} />
           <Route path="/burn" element={<Burn />} />
