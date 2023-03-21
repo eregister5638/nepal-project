@@ -5,6 +5,7 @@ import './Boxes.css';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Airway from './Airway';
+import Wound from './Wound';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
               </a>
             </div>
             <div className="box box2">
-              <a href="/Users/ethan/Desktop/nepal_project/wound.html">
+            <a href="/wound">
                 <button className="button2">Wound Management</button>
               </a>
             </div>
@@ -35,6 +36,7 @@ function App() {
             </div>
           </div>} />
           <Route path="/airway" element={<Airway />} />
+          <Route path="/wound" element={<Wound />} />
         </Routes>
       </Router>
     </div>
