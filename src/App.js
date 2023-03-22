@@ -8,6 +8,7 @@ import Airway from './Airway';
 import Wound from './Wound';
 import Burn from './Burn';
 import Immobilizations from './Immobilizations';
+import Home from './Home';
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
           <Route path="/airway" element={<Airway />} />
           <Route path="/wound" element={<Wound />} />
           <Route path="/burn" element={<Burn />} />
+          <Route path="/home" element={<Home />} />
+
 
         </Routes>
       </Router>
