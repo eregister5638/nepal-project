@@ -9,6 +9,7 @@ import Wound from './Wound';
 import Burn from './Burn';
 import Immobilizations from './Immobilizations';
 import Home from './Home';
+import About from './About';
 
 function App() {
   return (
@@ -43,6 +44,11 @@ function App() {
           <Route path="/wound" element={<Wound />} />
           <Route path="/burn" element={<Burn />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<App />} />
+
+
+
 
 
         </Routes>

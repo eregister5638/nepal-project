@@ -16,6 +16,8 @@
        .logo {
         font-size: 32px;
         color: black;
+        list-style-type: none;
+
        }
        /* NAVBAR MENU */
        .menu {

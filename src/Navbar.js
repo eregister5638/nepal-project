@@ -5,7 +5,7 @@ function Navbar() {
     return (
       <nav className="navbar">
         {/* LOGO */}
-        <div className="logo">Skills</div>
+        <div className="logo"> Nepal Trauma Project</div>
         {/* NAVIGATION MENU */}
         <ul className="nav-links">
           {/* USING CHECKBOX HACK */}
@@ -15,6 +15,7 @@ function Navbar() {
           <div className="menu">
             <li><a href="/home">Home</a></li>
             <li><a href="/about">About</a></li>
+            <li><a href="/">Skills</a></li>
           </div>
         </ul>
       </nav>
