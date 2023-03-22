@@ -13,8 +13,8 @@ function Navbar() {
           <label for="checkbox_toggle" className="hamburger">&#9776;</label>
           {/* NAVIGATION MENUS */}
           <div className="menu">
-            <li><a href="/about">About</a></li>
-            <li><a href="/">Skills</a></li>
+           <li><a href="/">Skills</a></li>
+           <li><a href="/about">About</a></li>
           </div>
         </ul>
       </nav>
